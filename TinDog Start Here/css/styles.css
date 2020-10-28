@@ -1,0 +1,174 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  text-align: center;
+}
+
+/*h1은 클래스가 아니므로 #도 안붙이고, .안붙임*/
+h1, h2, h3 {
+  font-weight: 900;
+  line-height: 1.5;
+}
+
+p {
+  font-size: 1.1rem;
+  color: grey;
+  width: 100%;
+}
+
+.big-heading{
+  font-size: 3.5rem;
+  font-weight: bold;
+  padding-bottom: 1.5rem;
+}
+.middle-heading{
+    font-size: 3rem;
+}
+
+.container-fluid {
+  padding: 6% 15%;
+  /*top&bottom: 6% 여백, left&right: 15% 여백 */
+}
+
+.color-section{
+  background-color: #ff4c68;
+  color: #ffffff;
+}
+.color2_section{
+  background-color: #ef8172;
+  color: #fff;
+}
+.white-section{
+  background-color: #fff;
+}
+
+/*title section*/
+
+/* html에서 'id'의 css는 #id이름 이다.
+   html에서 'class'의 css는 .class이름 이다.*/
+
+#title .container-fluid{
+padding: 3% 15% 7%;
+}
+
+/*navbar*/
+.navbar {
+  padding: 0 0 4.5rem;
+}
+
+.navbar-brand {
+  /* 네비바에 tindog */
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.nav-item {
+  /* 네비바에 Contact, Pricing, Download */
+  padding: 0% 18px;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+.download-button {
+  margin: 5% 3% 5% 0;
+}
+
+/* title image */
+.dogimage {
+  width: 60%;
+  transform: rotate(25deg); /*25도 기울임*/
+  position: absolute;/* 위치가 그대로인 이유: offset 속성을 명시하지 않으면, 기본값인 auto가 적용되는데,
+  그러면 원래 position 속성이 static이었을 때의 위치와 일치하도록 offset 속성값이 자동 지정되기 때문입니다.*/
+  right: 30%;
+}
+
+/* features */
+#features {
+  position: relative;
+  z-index: 1; /* position 지정을 해야 발현!! */
+
+}
+
+.features-box {
+  padding: 5%;
+}
+
+.icon {
+  color: #ef8172;
+  margin: 1rem;
+}
+
+.icon:hover {
+  color: #ff4c68;
+}
+
+
+
+#testimonials {
+  padding: 5% 15%;
+}
+
+
+.testimonial-image {
+  width: 10%;
+  border-radius: 100%;
+  /* 사진을 원형으로 자르기 */
+  margin: 20px;
+}
+
+#press {
+  padding: 2%;
+}
+
+.press-logo {
+  width: 15%;
+  margin: 20px 20px 50px;
+  /* 각각의 로고사진의 margin */
+}
+
+/* pricing section */
+#pricing{
+  padding: 100px;
+}
+
+.pricing-column{
+  padding: 3% 2%;
+}
+
+/* cta section */
+#cta{
+  font-weight: 900;
+  line-height: 1.5;
+}
+
+.cta-box{
+  padding: 2% 5%;
+  font-size: 3rem;
+}
+
+/* Footer section */
+#footer{
+  padding: 4% 2%;
+}
+
+.footer-icon{
+  margin: 0.6rem;
+}
+.footer-icon:hover {
+  color: grey;
+}
+
+/* media Query */
+@media (max-width: 1028px){ /* 화면의 width가 1028px이하일 때는 (최대 1028px일 때까지) */
+  #title{
+    text-align: center;
+  }
+  .dogimage{
+    transform: rotate(0);
+    position: static;
+  }
+}
